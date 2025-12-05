@@ -43,9 +43,9 @@ void	validate_path(t_map *map)
 	map->e_check = map->e;
 	locate_player(map);
 	flood_fill(map->player.x, map->player.y, map);
-	if (map->c_check != 0 || map->e_check >= map->e)
+	if (map->c_check != 0 || map->e_check > 0)
 	{
-		write(2, "Error\nThere is no valid path", 28);
+		write(2, "Error\nThere is no valid path\n", 29);
 		ft_free_array(map->array, map->y);
 		ft_free_array(map->copy, map->y);
 		exit(EXIT_FAILURE);

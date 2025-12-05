@@ -33,7 +33,7 @@ void	player_left(t_map *map, int x, int y)
 	print_all(map, x, y, map->img.empty);
 	print_all(map, x, y, map->img.px);
 	map->array[y][x] = 'Z';
-	map->player.y = y;
+	map->player.x = x;
 }
 
 void	player_right(t_map *map, int x, int y)
@@ -48,7 +48,7 @@ void	player_right(t_map *map, int x, int y)
 	print_all(map, x, y, map->img.empty);
 	print_all(map, x, y, map->img.px);
 	map->array[y][x] = 'Z';
-	map->player.y = y;
+	map->player.x = x;
 }
 
 void	player_up(t_map *map, int x, int y)

@@ -1,0 +1,38 @@
+# Executable
+so_long
+
+# Object files
+*.o
+*.a
+
+# Build artifacts
+src/*.o
+Libft/*.o
+Libft/libft.a
+minilibx-linux/*.o
+minilibx-linux/*.a
+minilibx-linux/test/
+
+# Dependency directories
+minilibx-linux/
+
+# Temporary files
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Debug files
+*.dSYM/
+vgcore.*
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Test outputs
+test_output/
+
+# CodeQL
+_codeql_detected_source_root

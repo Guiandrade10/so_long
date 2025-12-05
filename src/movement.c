@@ -56,7 +56,7 @@ void	move_up(t_map *map)
 		print_all(map, x, y, map->img.empty);
 		print_all(map, x, y, map->img.player_up);
 		map->array[y][x] = 'P';
-		map->player.x = x;
+		map->player.y = y;
 	}
 }
 
@@ -85,7 +85,7 @@ void	move_left(t_map *map)
 		print_all(map, x, y, map->img.empty);
 		print_all(map, x, y, map->img.player_left);
 		map->array[y][x] = 'P';
-		map->player.y = y;
+		map->player.x = x;
 	}
 }
 
@@ -139,6 +139,6 @@ void	move_right(t_map *map)
 		print_all(map, x, y, map->img.player_right);
 		map->array[y][x] = 'P';
 		print_moves(map);
+		map->player.x = x;
 	}
-	map->player.x = x;
 }

@@ -29,6 +29,6 @@ void	ft_exit_free(t_map *map)
 	if (map->file)
 		free(map->file);
 	if (map->line)
-		free(map->file);
+		free(map->line);
 	exit(EXIT_FAILURE);
 }
